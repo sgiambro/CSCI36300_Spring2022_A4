@@ -1,0 +1,34 @@
+// $Id: assignment2.mpc 378 2010-02-07 22:09:38Z hillj $
+
+project (assignment3) {
+  exename = assignment3
+  install = .
+ 
+  specific (make, gnuace) {
+    compile_flags += -std=c++11
+  }
+
+  Source_Files {
+    driver.cpp
+  }
+
+  Template_Files {
+    Calculator.cpp
+    Calc_Builder.h
+    Calc_Tree_Builder.cpp
+    Calc_Node_Visitor.h
+    Eval_Calc_Tree.cpp
+    Infix_Calc_Tree.cpp
+    Postfix_Calc_Tree.cpp
+    Calc_Node.cpp
+    Number_Node.cpp
+    Binary_Node.cpp
+    Unary_Node.cpp
+    Add_Node.cpp
+    Sub_Node.cpp
+    Div_Node.cpp
+    Mod_Node.cpp
+    Mul_Node.cpp
+
+  }
+}
